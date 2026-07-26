@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lonnie Bruton — Photography &amp; Writing</title>
+  <meta name="description" content="lonniebruton.com is being rebuilt. The photo archive and blog will return soon.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body { height: 100%; }
+
+    body {
+      background: #101214;
+      color: #d9d4cb;
+      font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    main {
+      max-width: 34rem;
+      animation: fade-in 1.4s ease-out both;
+    }
+
+    .aperture {
+      width: 88px;
+      height: 88px;
+      margin: 0 auto 2.25rem;
+      display: block;
+      animation: spin-in 1.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .aperture path { fill: none; stroke: #8a8378; stroke-width: 3; stroke-linejoin: round; }
+    .aperture circle { fill: none; stroke: #8a8378; stroke-width: 3; }
+
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: #f0ece4;
+      margin-bottom: 0.9rem;
+      padding-left: 0.35em; /* offsets trailing letter-spacing so text centers true */
+    }
+
+    .tagline {
+      font-size: 0.85rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #8a8378;
+      margin-bottom: 2.5rem;
+      padding-left: 0.25em;
+    }
+
+    hr {
+      border: none;
+      width: 3rem;
+      border-top: 1px solid #3a3d40;
+      margin: 0 auto 2.5rem;
+    }
+
+    p.note {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #b5afa4;
+      font-weight: 300;
+    }
+
+    @keyframes fade-in {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: none; }
+    }
+
+    @keyframes spin-in {
+      from { opacity: 0; transform: rotate(-60deg) scale(0.85); }
+      to   { opacity: 1; transform: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      main, .aperture { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- Six-blade camera aperture -->
+    <svg class="aperture" viewBox="0 0 100 100" role="img" aria-label="Camera aperture">
+      <circle cx="50" cy="50" r="46"/>
+      <path d="M50 22 L74.2 36 L74.2 64 L50 78 L25.8 64 L25.8 36 Z"/>
+      <path d="M50 22 L50 36.2 M74.2 36 L61.9 43.1 M74.2 64 L61.9 56.9 M50 78 L50 63.8 M25.8 64 L38.1 56.9 M25.8 36 L38.1 43.1"/>
+    </svg>
+
+    <h1>Lonnie Bruton</h1>
+    <div class="tagline">Photography &middot; Writing</div>
+    <hr>
+    <p class="note">
+      This site is being rebuilt from the ground up.<br>
+      The photo archive and blog will return soon.
+    </p>
+  </main>
+</body>
+</html>
