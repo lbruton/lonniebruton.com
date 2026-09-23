@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "lonniebruton-com",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    // Run the Worker before asset matching so www → apex redirect applies to every path.
+    "run_worker_first": true
+  },
+  // Custom domains create proxied DNS records for these hostnames only;
+  // MX / TXT / DKIM records for Proton Mail are untouched.
+  "routes": [
+    { "pattern": "lonniebruton.com", "custom_domain": true },
+    { "pattern": "www.lonniebruton.com", "custom_domain": true }
+  ],
+  "observability": { "enabled": true }
+}
