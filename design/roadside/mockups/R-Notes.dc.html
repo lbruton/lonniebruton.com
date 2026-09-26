@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Roadside — Field Notes</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&amp;family=Courier+Prime:wght@400;700&amp;family=Libre+Franklin:wght@400;600&amp;display=swap">
+<style>
+body{margin:0;background:#F3EAD6;font-family:'Libre Franklin',system-ui,sans-serif;color:#2B1D12}
+a{color:#2B1D12;text-decoration:none}a:hover{color:#B3221A}
+</style>
+</helmet>
+<div style="width: 1440px; height: 1960px; box-sizing: border-box; background: #F3EAD6; color: #2B1D12; font-family: 'Libre Franklin', system-ui, sans-serif; display: flex; flex-direction: column">
+
+  <header style="background: #F6B81A; display: flex; justify-content: space-between; align-items: center; padding: 22px 80px">
+    <a href="R-Home.dc.html" style="font-family: 'Alfa Slab One', serif; font-size: 32px; color: #B3221A; letter-spacing: 0.02em">LONNIE BRUTON</a>
+    <nav style="display: flex; gap: 30px; align-items: center; font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 16px; text-transform: uppercase">
+      <a href="R-Gallery.dc.html">Photographs</a>
+      <a href="R-Projects.dc.html">Projects</a>
+      <a href="R-Notes.dc.html" style="background: #2B1D12; color: #F6B81A; padding: 8px 14px">Field Notes</a>
+      <a href="#">About</a>
+      <a href="https://lonniebruton.darkroom.com" style="background: #B3221A; color: #FFF8E8; padding: 10px 16px; border: 3px solid #2B1D12; box-shadow: 3px 3px 0 #2B1D12">Prints ↗</a>
+    </nav>
+  </header>
+  <div style="display: flex; flex-direction: column; gap: 5px; padding-top: 5px">
+    <div style="height: 7px; background: #B3221A"></div>
+    <div style="height: 7px; background: #0B6867"></div>
+  </div>
+
+  <section style="padding: 64px 80px 40px; display: flex; flex-direction: column; gap: 28px">
+    <div style="display: flex; justify-content: space-between; align-items: flex-end">
+      <h1 style="margin: 0; font-family: 'Alfa Slab One', serif; font-weight: 400; font-size: 112px; line-height: 0.9; text-shadow: 6px 6px 0 #F6B81A">Field Notes</h1>
+      <div style="width: 420px; font-size: 17px; line-height: 1.55; color: #4B3A28; padding-bottom: 8px; text-align: right">Weekend slides, film and gear, homelab and network notes, and whatever is on the turntable.</div>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 18px 0; border-top: 3px solid #2B1D12; border-bottom: 3px solid #2B1D12">
+      <div role="group" aria-label="Filter by category" style="display: flex; gap: 8px">
+        <button aria-pressed="true" style="font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 15px; padding: 11px 14px; border: 3px solid #2B1D12; background: #2B1D12; color: #F6B81A">ALL</button>
+        <button aria-pressed="false" style="font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 15px; padding: 11px 14px; border: 3px solid #2B1D12; background: #FFFCF3; color: #2B1D12">★ WEEKEND SLIDES</button>
+        <button aria-pressed="false" style="font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 15px; padding: 11px 14px; border: 3px solid #2B1D12; background: #B3221A; color: #FFF8E8">PHOTOGRAPHY</button>
+        <button aria-pressed="false" style="font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 15px; padding: 11px 14px; border: 3px solid #2B1D12; background: #0B6867; color: #FFF8E8">DEVOPS</button>
+        <button aria-pressed="false" style="font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 15px; padding: 11px 14px; border: 3px solid #2B1D12; background: #F6B81A; color: #2B1D12">NETWORKING</button>
+        <button aria-pressed="false" style="font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 15px; padding: 11px 14px; border: 3px solid #2B1D12; background: #5E2A7E; color: #FFF8E8">CONCERTS &amp; VINYL</button>
+      </div>
+      <div style="display: flex; gap: 10px; align-items: center">
+        <label for="notes-q" style="font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 14px">SEARCH</label>
+        <input id="notes-q" placeholder="motels, VLANs, Portra…" style="width: 220px; font-family: 'Courier Prime', monospace; font-size: 15px; padding: 11px 12px; border: 3px solid #2B1D12; background: #FFFCF3; color: #2B1D12">
+      </div>
+    </div>
+  </section>
+
+  <article style="margin: 0 80px; background: #FFFCF3; border: 3px solid #2B1D12; box-shadow: 8px 8px 0 #2B1D12; display: flex; gap: 48px; align-items: center; padding: 40px 48px">
+    <div style="width: 320px; height: 320px; box-sizing: border-box; flex-shrink: 0; background: #F7F1E1; border: 1px solid #D8CBAE; border-radius: 12px; box-shadow: 0 12px 20px -8px rgba(60,40,10,0.45); display: flex; flex-direction: column; justify-content: space-between; align-items: center; padding: 16px 18px">
+      <span style="width: 100%; display: flex; justify-content: space-between; font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 11px; letter-spacing: 0.12em; color: #7A5F3E"><span>CINESTILL 800T</span><span>071</span></span>
+      <img src="/_blob/e18e6904319978b00ea7a4bd6f86cada" alt="" style="display: block; width: 256px; height: 172px; object-fit: cover; border-radius: 16px">
+      <span style="width: 100%; display: flex; justify-content: space-between; font-family: 'Courier Prime', monospace; font-size: 11px; color: #7A5F3E"><span>TULSA, OK</span><span>OCT 2023</span></span>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 16px">
+      <div style="display: flex; gap: 12px; font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 14px">
+        <span style="background: #2B1D12; color: #F6B81A; padding: 5px 10px">★ WEEKEND SLIDE No. 001</span>
+        <span style="padding: 5px 0; color: #6A5540">27 SEP 2026 · 3 MIN</span>
+      </div>
+      <h2 style="margin: 0; font-family: 'Alfa Slab One', serif; font-weight: 400; font-size: 46px; line-height: 1.05"><a href="R-Post.dc.html">Oktoberfest Vendor</a></h2>
+      <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #4B3A28">[Opening lines of the note, in your words.]</p>
+      <div style="display: flex; gap: 12px">
+        <a href="R-Post.dc.html" style="font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 15px; padding: 12px 16px; border: 3px solid #2B1D12; background: #F6B81A">READ THE NOTE →</a>
+        <a href="R-Gallery.dc.html" style="font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 15px; padding: 12px 16px; border: 3px solid #2B1D12">SEE THE SLIDE</a>
+      </div>
+    </div>
+  </article>
+
+  <section style="margin: 64px 80px 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px">
+    <sc-for list="{{posts}}" as="p" hint-placeholder-count="6">
+      <article style="background: #FFFCF3; border: 3px solid #2B1D12; box-shadow: 6px 6px 0 #2B1D12; display: flex; flex-direction: column">
+        <div style="background: {{p.bg}}; color: {{p.fg}}; border-bottom: 3px solid #2B1D12; padding: 10px 18px; font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 14px; display: flex; justify-content: space-between"><span>{{p.cat}}</span><span>{{p.date}}</span></div>
+        <sc-if value="{{p.hasImg}}" hint-placeholder-val="{{ false }}">
+          <img src="{{p.src}}" alt="" style="display: block; width: 100%; height: 170px; object-fit: cover; border-bottom: 3px solid #2B1D12">
+        </sc-if>
+        <div style="padding: 22px 22px 26px; display: flex; flex-direction: column; gap: 12px">
+          <h3 style="margin: 0; font-family: 'Alfa Slab One', serif; font-weight: 400; font-size: 24px; line-height: 1.2"><a href="#">{{p.title}}</a></h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #4B3A28">{{p.excerpt}}</p>
+        </div>
+      </article>
+    </sc-for>
+  </section>
+
+  <div style="display: flex; justify-content: center; gap: 16px; padding: 56px 0">
+    <a href="#" style="font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 16px; padding: 14px 22px; border: 3px solid #2B1D12; background: #F6B81A; box-shadow: 4px 4px 0 #2B1D12">OLDER NOTES ▸</a>
+    <a href="#" style="font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 16px; padding: 14px 22px; border: 3px solid #2B1D12; background: #FFFCF3; box-shadow: 4px 4px 0 #2B1D12">FROM THE WORDPRESS ARCHIVE</a>
+  </div>
+
+  <footer style="margin-top: auto; background: #2B1D12; color: #F3EAD6; padding: 28px 80px; display: flex; justify-content: space-between; font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 14px">
+    <span style="color: #F6B81A">© LONNIE BRUTON · TULSA, OK</span>
+    <span>DARKROOM PRINTS ↗ · FLICKR · INSTAGRAM · LBRUTON.CC · RSS</span>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1960}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const C = { 'PHOTOGRAPHY': ['#B3221A', '#FFF8E8'], 'DEVOPS': ['#0B6867', '#FFF8E8'], 'NETWORKING': ['#F6B81A', '#2B1D12'], 'CONCERTS & VINYL': ['#5E2A7E', '#FFF8E8'] };
+    const posts = [
+      { cat: 'DEVOPS', date: '21 SEP', title: 'Leaving WordPress for a Cloudflare Worker', excerpt: 'How the export, the image library and the new build pipeline fit together.' },
+      { cat: 'PHOTOGRAPHY', date: '[DATE]', title: 'Route 66, one slide at a time', excerpt: '[Why the Route 66 tray exists, and what’s coming off the backlog.]', src: '/_blob/50fe1a45b1af79035cedc6c7ffa7b1f6' },
+      { cat: 'CONCERTS & VINYL', date: '[DATE]', title: '[Concert or crate-digging post]', excerpt: '[Excerpt]' },
+      { cat: 'PHOTOGRAPHY', date: '[DATE]', title: '[Air show post]', excerpt: '[Excerpt]', src: '/_blob/016861938e81b179905d5a97fc869acb' },
+      { cat: 'NETWORKING', date: '[DATE]', title: '[Networking post]', excerpt: '[Excerpt — longer technical write-ups link over to lbruton.cc.]' },
+      { cat: 'DEVOPS', date: '[DATE]', title: 'EXIF to JSON: the script that feeds the gallery', excerpt: 'Pulling camera, lens and film data out of files at build time.' }
+    ];
+    return { posts: posts.map((p) => ({ ...p, bg: C[p.cat][0], fg: C[p.cat][1], hasImg: !!p.src })) };
+  }
+}
+</script>
+</body>
+</html>
