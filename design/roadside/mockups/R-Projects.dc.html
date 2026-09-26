@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Roadside — Projects</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&amp;family=Courier+Prime:wght@400;700&amp;family=Libre+Franklin:wght@400;600&amp;display=swap">
+<style>
+body{margin:0;background:#F3EAD6;font-family:'Libre Franklin',system-ui,sans-serif;color:#2B1D12}
+a{color:#2B1D12;text-decoration:none}a:hover{color:#B3221A}
+</style>
+</helmet>
+<div style="width: 1440px; height: 1480px; box-sizing: border-box; background: #F3EAD6; color: #2B1D12; font-family: 'Libre Franklin', system-ui, sans-serif; display: flex; flex-direction: column">
+
+  <header style="background: #F6B81A; display: flex; justify-content: space-between; align-items: center; padding: 22px 80px">
+    <a href="R-Home.dc.html" style="font-family: 'Alfa Slab One', serif; font-size: 32px; color: #B3221A; letter-spacing: 0.02em">LONNIE BRUTON</a>
+    <nav style="display: flex; gap: 30px; align-items: center; font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 16px; text-transform: uppercase">
+      <a href="R-Gallery.dc.html">Photographs</a>
+      <a href="R-Projects.dc.html" style="background: #2B1D12; color: #F6B81A; padding: 8px 14px">Projects</a>
+      <a href="R-Notes.dc.html">Field Notes</a>
+      <a href="#">About</a>
+      <a href="https://lonniebruton.darkroom.com" style="background: #B3221A; color: #FFF8E8; padding: 10px 16px; border: 3px solid #2B1D12; box-shadow: 3px 3px 0 #2B1D12">Prints ↗</a>
+    </nav>
+  </header>
+  <div style="display: flex; flex-direction: column; gap: 5px; padding-top: 5px">
+    <div style="height: 7px; background: #B3221A"></div>
+    <div style="height: 7px; background: #0B6867"></div>
+  </div>
+
+  <section style="padding: 64px 80px 48px; display: flex; justify-content: space-between; align-items: flex-end">
+    <h1 style="margin: 0; font-family: 'Alfa Slab One', serif; font-weight: 400; font-size: 112px; line-height: 0.9; text-shadow: 6px 6px 0 #0B6867; color: #2B1D12">Projects</h1>
+    <p style="margin: 0; width: 500px; font-size: 18px; line-height: 1.6; color: #4B3A28; text-align: right; padding-bottom: 8px">The day job and the side builds: network automation, homelab and code. The deep technical write-ups live next door.</p>
+  </section>
+
+  <a href="https://lbruton.cc" style="margin: 0 80px; background: #0B6867; color: #FFF8E8; border: 3px solid #2B1D12; box-shadow: 8px 8px 0 #2B1D12; padding: 44px 48px; display: flex; justify-content: space-between; align-items: center; gap: 48px">
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <span style="align-self: flex-start; font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 14px; background: #F6B81A; color: #2B1D12; padding: 5px 10px">NEXT DOOR · UNDER CONSTRUCTION</span>
+      <span style="font-family: 'Alfa Slab One', serif; font-size: 64px; line-height: 1">lbruton.cc</span>
+      <span style="font-size: 19px; line-height: 1.55; max-width: 640px">Network automation, Claude Code and Codex workflows, homelab builds and the projects below, written up in full.</span>
+    </div>
+    <span style="flex-shrink: 0; font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 18px; padding: 16px 22px; border: 3px solid #2B1D12; background: #F6B81A; color: #2B1D12; box-shadow: 4px 4px 0 #2B1D12">VISIT ↗</span>
+  </a>
+
+  <section style="margin: 56px 80px 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px">
+    <sc-for list="{{projects}}" as="p" hint-placeholder-count="3">
+      <a href="#" style="background: #FFFCF3; border: 3px solid #2B1D12; box-shadow: 6px 6px 0 #2B1D12; display: flex; flex-direction: column">
+        <div style="background: {{p.bg}}; color: {{p.fg}}; border-bottom: 3px solid #2B1D12; padding: 10px 18px; font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 14px; display: flex; justify-content: space-between"><span>{{p.kind}}</span><span>{{p.status}}</span></div>
+        <div style="padding: 24px; display: flex; flex-direction: column; gap: 12px">
+          <span style="font-family: 'Alfa Slab One', serif; font-size: 30px">{{p.name}}</span>
+          <span style="font-size: 16px; line-height: 1.55; color: #4B3A28">{{p.desc}}</span>
+          <span style="font-family: 'Courier Prime', monospace; font-size: 14px; color: #6A5540">{{p.stack}}</span>
+          <span style="margin-top: 8px; font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 15px">{{p.links}}</span>
+        </div>
+      </a>
+    </sc-for>
+  </section>
+
+  <section style="margin: 56px 80px 0; padding: 26px 30px; border: 3px dashed #2B1D12; display: flex; justify-content: space-between; align-items: center">
+    <span style="font-family: 'Courier Prime', monospace; font-size: 17px">Code lives on GitHub: <a href="https://github.com/lbruton" style="font-weight: 700; color: #0B6867">github.com/lbruton ↗</a></span>
+    <span style="font-family: 'Courier Prime', monospace; font-size: 15px; color: #6A5540">DevOps and Networking notes on this site are the short versions.</span>
+  </section>
+
+  <footer style="margin-top: auto; background: #2B1D12; color: #F3EAD6; padding: 28px 80px; display: flex; justify-content: space-between; font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 14px">
+    <span style="color: #F6B81A">© LONNIE BRUTON · TULSA, OK</span>
+    <span>DARKROOM PRINTS ↗ · FLICKR · INSTAGRAM · LBRUTON.CC · RSS</span>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1480}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      projects: [
+        { kind: 'APP', status: '[STATUS]', bg: '#B3221A', fg: '#FFF8E8', name: 'StakTrakr', desc: '[One or two lines on what StakTrakr does and who it is for.]', stack: '[Stack]', links: 'LIVE ↗ · CODE ↗ · WRITE-UP ↗' },
+        { kind: 'THIS SITE', status: 'IN PROGRESS', bg: '#F6B81A', fg: '#2B1D12', name: 'lonniebruton.com', desc: 'Rebuilt from a retired WordPress install as static files on a Cloudflare Worker, deployed from GitHub.', stack: 'HTML · Cloudflare Workers · GitHub', links: 'CODE ↗ · THE MIGRATION NOTE →' },
+        { kind: 'TOOLING', status: 'PLANNED', bg: '#5E2A7E', fg: '#FFF8E8', name: 'Weekend Slide pipeline', desc: 'Pick a photo, read its metadata, draft the gallery entry and social posts, leave the words to me.', stack: 'Scripts · Claude Code skills', links: 'WRITE-UP → (SOON)' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

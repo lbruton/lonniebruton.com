@@ -1,0 +1,60 @@
+/* Kodachrome Roadside — design tokens (locked concept, see DESIGN.md).
+   Import once in the site stylesheet; components reference these variables. */
+
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Courier+Prime:wght@400;700&family=Libre+Franklin:ital,wght@0,400;0,600;1,400&display=swap");
+
+:root {
+  /* Surfaces */
+  --paper: #F3EAD6;        /* page background (cream) */
+  --card: #FFFCF3;         /* cards, light table */
+  --mount: #F7F1E1;        /* slide-mount cardboard */
+  --mount-edge: #D8CBAE;
+  --grid-line: #EFE4CB;    /* light-table grid */
+  --darkroom: #1E1712;     /* projector / dark-room wall */
+  --darkroom-tile: #2B211A;
+
+  /* Ink */
+  --ink: #2B1D12;          /* text, borders, offset shadows */
+  --ink-2: #4B3A28;        /* body copy on cream */
+  --ink-3: #6A5540;        /* meta text */
+  --mount-ink: #7A5F3E;    /* text printed on mounts */
+  --on-dark: #F3EAD6;
+  --on-color: #FFF8E8;
+
+  /* Brand */
+  --yellow: #F6B81A;       /* header band, primary buttons */
+  --red: #B3221A;          /* wordmark, print CTA, PRINT badge */
+  --teal: #0B6867;         /* second stripe, DevOps, Projects */
+  --purple: #5E2A7E;       /* Concerts & Vinyl */
+
+  /* Category colours: [background, foreground] */
+  --cat-photography-bg: var(--red);    --cat-photography-fg: var(--on-color);
+  --cat-devops-bg: var(--teal);        --cat-devops-fg: var(--on-color);
+  --cat-networking-bg: var(--yellow);  --cat-networking-fg: var(--ink);
+  --cat-vinyl-bg: var(--purple);       --cat-vinyl-fg: var(--on-color);
+
+  /* Type */
+  --font-display: "Alfa Slab One", Georgia, serif;
+  --font-mono: "Courier Prime", "Courier New", monospace;
+  --font-body: "Libre Franklin", system-ui, sans-serif;
+
+  /* Shape */
+  --border: 3px solid var(--ink);
+  --shadow-sm: 3px 3px 0 var(--ink);
+  --shadow: 5px 5px 0 var(--ink);
+  --shadow-lg: 8px 8px 0 var(--ink);
+  --mount-radius: 10px;
+  --window-radius: 14px;
+  --mount-shadow: 0 10px 18px -8px rgba(60, 40, 10, 0.4);
+  --projector-glow: 0 0 0 8px var(--mount), 0 0 80px rgba(246, 184, 26, 0.35);
+
+  /* Layout */
+  --page-max: 1440px;
+  --gutter: 80px;          /* desktop side padding; 16px on phones */
+}
+
+/* Dark-room toggle for the gallery (night, neon, B&W). */
+[data-room="dark"] {
+  --grid-line: transparent;
+  --card: var(--darkroom);
+}

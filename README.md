@@ -18,5 +18,8 @@ under-construction page while the permanent replacement is designed.
 ## Structure
 
 Plain static HTML — no build step. `public/` is the site root (`public/index.html` is the entire site for now); `src/worker.js` handles the www redirect.
+`design/roadside/` holds the locked design concept (Kodachrome Roadside): spec in
+[`design/roadside/DESIGN.md`](design/roadside/DESIGN.md), tokens and the canvas mockups. It sits
+outside `public/`, so none of it is deployed.
 The long-term plan is a static site generator (Hugo/Astro/Eleventy) fed by the
 converted WordPress export, in the same GitHub + Cloudflare pattern as StakTrakr.
