@@ -1,3 +1,11 @@
 node_modules/
 .wrangler/
 .dev.vars
+
+# DocVault (Obsidian) per-machine state
+DocVault/.obsidian/workspace*.json
+DocVault/.obsidian/graph.json
+DocVault/.trash/
+
+# Local scratch (WordPress backup extracts etc.) — never commit
+temp/
