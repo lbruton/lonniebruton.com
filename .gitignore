@@ -1,6 +1,7 @@
 node_modules/
 .wrangler/
 .dev.vars
+.claude/worktrees/
 
 # DocVault (Obsidian) per-machine state
 DocVault/.obsidian/workspace*.json

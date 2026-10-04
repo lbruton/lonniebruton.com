@@ -21,7 +21,7 @@ Static site for [lonniebruton.com](https://lonniebruton.com): photography and wr
 | Hosting | Cloudflare Worker with static assets (`wrangler.jsonc`, `assets.directory: ./public`), deployed by Workers Builds on push to `main` |
 | Domains | `lonniebruton.com` (canonical), `www.lonniebruton.com` (301 → apex) |
 | Status | Interim splash page. The WordPress site (EasyWP) was retired in July 2026 after a full backup |
-| Plane | Tracked under the Portfolio project, prefix `WWW` |
+| Plane | Tracked in the Web Portals project, prefix `WWW` (shared with `lbruton.github.io`) |
 
 ## History
 
@@ -34,4 +34,5 @@ A static site generator (Hugo, Astro or Eleventy) fed by the converted WordPress
 ## Docs
 
 - Vault: this folder (`DocVault/`). Only `public/` is web-served, so the vault is never published.
-- Onboarding follow-ups (Infisical binding, dedicated Plane project?): DEVS-103.
+- Private companion (infra detail that can't live in this public repo): `Devops/DocVault/Projects/lonniebruton.com/` (`vault-path private`).
+- Onboarding follow-ups (Infisical binding, foundation docs): DEVS-117, which supersedes DEVS-103 now that the Plane project is shared.
